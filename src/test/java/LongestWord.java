@@ -21,20 +21,6 @@ public class LongestWord {
         return longest;
     }
 
-    @Test
-    public void test1(){
-        String input="The cow jumped over the moon.";
-        Assert.assertEquals("6 and jumped",longestWord(input));
-    }
-    @Test
-    public void test2(){
-        String input="";
-        Assert.assertEquals("You do not have any word!",longestWord(input));
-    }
-    @Test
-    public void test3(){
-        String input="The animal jumped over the moon.";
-        Assert.assertEquals("6 and animal",longestWord(input));
-    }
+
 
 }
