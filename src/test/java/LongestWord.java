@@ -1,6 +1,3 @@
-import org.junit.Assert;
-import org.junit.Test;
-
 public class LongestWord {
     public static String  longestWord(String sentence){
         int length=sentence.length();
@@ -17,6 +14,11 @@ public class LongestWord {
                 }
             }
             longest=max+" and "+ words[indexMax];
+            for (String word:words) {
+                if(word.length()==max && !word.equals(words[indexMax])){
+                    longest +=", "+word;
+                }
+            }
         }
         return longest;
     }
